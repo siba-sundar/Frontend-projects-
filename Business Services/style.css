@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +15,7 @@ html body{
 .container1{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #FFDC25 10%, #FFF7CE 90%);
-
-   
+    background: radial-gradient(circle at top left, #FFDC25 10%, #FFF7CE 90%);   
 }
 .container1 header{
     display: grid;
@@ -23,7 +24,6 @@ html body{
     justify-content: center ;
     width: 100%;
     height: 10vh;
-    background-color: aqua;
 }
 
 .container1  a{
@@ -33,10 +33,126 @@ html body{
     font-size: 2.3vw;
     text-decoration: none;
     color: black;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
 }
 
 .container1 header ul{
     display: flex;
     align-items: center;
     list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    gap: 2vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+
+.container1 header button {
+    width: 10vw;
+    margin-left: 2vw;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid #0039CD;
+    font-family: "Syne";
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #0039CD;
+}
+
+
+
+.container1 .banner {
+    display: flex;
+    align-items: center;
+   
+    width: 100%;
+    height: 90%;
+    background-color: #0039CD;
+}
+
+.container1 .banner .bannerLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48vw;
+}
+
+
+.banner .bannerLeft h1{
+    position: relative;
+    width: 100%;
+    font-size: 5vw;
+    font-family: "Syne";
+    font-weight: 700;
+    padding-left: 3vw;
+}
+
+
+.bannerLeft h1 span{
+    position: absolute;
+    padding-left: 1vw;
+    background-color: #FFDE30;
+    bottom: -10;
+    border-radius: 5px;
+}
+
+
+
+.banner .bannerLeft p{
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 3vw;
+    padding-top: 4vh;
+    width: 80%;
+}
+
+
+
+.bannerLeft div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 60%;
+    height: 9vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0.3vw;
+}
+
+
+.bannerLeft div input{
+    border: none;
+    height: 100%;
+    width: 60%;
+    font-family: "Montserrat";
+}
+
+
+.bannerLeft div button{
+    height: 100%;
+    width: 30%;
+    background-color: #0039CD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1.3vw;
+    font-family: "Syne";
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.banenr .bannerRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner .bannerRight img{
+    width: 3vw;
 }
