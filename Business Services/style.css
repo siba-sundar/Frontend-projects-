@@ -290,7 +290,14 @@ html body{
     justify-content: center;
     flex-direction: column;
     padding-top: 30px;
+    background-image: url('assets/Ellipse\ 103.png');
+    background-size: 50%;
+    background-position: right;
+    animation: backgroundFade 4s infinite;
+    position: relative;
+    background-repeat: no-repeat;
 }
+
 
 
 .container2 .services{
@@ -677,8 +684,15 @@ html body{
 
 
 .highlights{
+    height: 800px;
    padding-left: 5vw; 
    margin-top: 7vh;
+   background-color: #FFFDF0;
+   background-image: url(assets/Ellipse\ 142.png);
+   background-position: right;
+   background-size: 20%;
+   background-repeat: no-repeat;   
+   padding-top: 10vh;
 }
 
 
@@ -719,7 +733,9 @@ html body{
     justify-content: center;
     flex-direction: column;
     gap: 4vh;
+    
 }
+
 
 
 .communications .commContainer{
@@ -728,7 +744,13 @@ html body{
     border: 1px solid grey;
     border-radius: 5px;
     padding: 1.4vw;
+    transition: 0.3s;
 }
+
+.commContainer:hover{
+    border:2px solid red
+}
+
 
 .commContainer img{
     display: none;
@@ -977,13 +999,14 @@ footer {
 .footerRight{
     width: 60%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 15vw;
     gap: 5vw;
 }
 
 .footerRight p{
-    font: 2.7vw;
+    font: 6.7vw;
     font-family: "Syne";
     font-weight: 700;
 }
@@ -995,6 +1018,7 @@ footer {
     font-size: 1.5vw;
     font-family: "Montserrat";
     font-weight: 100;
+    margin-top: 2vh;
 
 }
 .footerRight .quickLinks{
@@ -1017,6 +1041,7 @@ footer {
 .copyrights1{
     font-size: 1vw;
     font-weight: 900;
+    margin-top: 9vh;
 }
 
 
