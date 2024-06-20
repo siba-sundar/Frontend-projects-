@@ -153,9 +153,6 @@ html body{
     font-family: "Syne";
     font-weight: 700;
     padding-left: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -321,6 +318,33 @@ html body{
     width: 70%;
     text-align: center;
 }
+
+
+/* Initial style for the span */
+.services h2 span {
+    position: relative;
+    display: inline-block;
+    animation: slideBackground 5s infinite;
+}
+
+/* Keyframe animation for sliding background */
+@keyframes slideBackground {
+    0%, 100% {
+        background-size: 0% 100%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+}
+
+/* Applying the background animation */
+.services h2 span {
+    background: linear-gradient(to right, #FFDE30 100%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background 0.5s ease-in-out;
+}
+
 
 .container2 .servicesList{
     display: flex;
@@ -518,6 +542,15 @@ html body{
        
         font-size:3vw;
     }
+    
+    .servicesList .serviceDetails:hover{
+        border: 2px solid blue;
+    }
+
+    .last:hover{
+        border: 2px solid blue;
+    }
+    
     
     
 }
