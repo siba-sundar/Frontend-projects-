@@ -15,7 +15,7 @@ html body{
 .container1{
     width: 100%;
     height: 100vh;
-    background: radial-gradient(circle at top left, #FFDC25 10%, #FFF7CE 90%);   
+    background: radial-gradient(circle at top left, #FFDC25 ,#eff0cf, #FFF7CE);   
 }
 .container1 header{
     display: grid;
@@ -60,14 +60,79 @@ html body{
     font-size: 1.7vw;
     font-weight: 700;
     color: #0039CD;
+    transition: 0.3s;
 }
 
+.container1 header button:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+    margin-right: 3vw;
+    background-color: #f1e18f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 4vw;
+}
+
+.dropdown-menu ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #ddd;
+}
+
+
+@media (max-width: 700px) {
+
+    .container1{
+        height: 700px;
+        background: radial-gradient(circle at top left, #FFDC25 ,#eff0cf, #FFF7CE);   
+    }
+
+
+    .container1 a{
+        font-size: 5vw;
+        padding-left: 4vw;
+    }
+    .container1 header ul,
+    .container1 header button {
+        display: none;
+    }
+
+    .container1 header img {
+        display: block;
+        justify-self: flex-end; 
+    }
+}
 
 
 .container1 .banner {
     display: flex;
     align-items: center;
-   
     width: 100%;
     height: 90%;
 }
@@ -77,24 +142,29 @@ html body{
     flex-direction: column;
     justify-content: center;
     width: 48vw;
+    padding-left: 2vw;
 }
 
 
 .banner .bannerLeft h1{
-    position: relative;
+   
     width: 100%;
     font-size: 5vw;
     font-family: "Syne";
     font-weight: 700;
     padding-left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
+
 .bannerLeft h1 span{
-    position: absolute;
+    
     padding-left: 1vw;
     background-color: #FFDE30;
-    bottom: -10;
     border-radius: 5px;
 }
 
@@ -143,9 +213,17 @@ html body{
     font-family: "Syne";
     font-size: 90%;
     font-weight: 700;
+    transition: 0.3s;
 }
 
-.banenr .bannerRight{
+.bannerLeft div button:hover{
+    background-color: white;
+    color: blue;
+}
+
+
+
+.banner .bannerRight{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +234,54 @@ html body{
     width: 80%;
 }
 
+@media (max-width: 700px){
+    .container1 .banner{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container1 .banner .bannerLeft{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .banner .bannerLeft h1 {
+        font-size: 6vw ;
+    }
+
+    .banner .bannerLeft p{
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .bannerLeft div{
+       width: 70%;
+       height: 8vw;
+       margin-top: 20px;
+    }
+    
+    .bannerLeft div button{
+    margin-left: 4vw;  
+    }
+    
+    .banner .bannerRight{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    
+    .banner .bannerRight img{
+        width: 70%;
+    }
+}
+
+
 
 
 .container2{
@@ -163,12 +289,841 @@ html body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 
-.container2 .sevices{
+.container2 .services{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
+}
+
+
+.container2 .services h5 {
+    font-family: "Montserrat" ;
+    color: #EA5A47;
+
+}
+
+.container2 .services h2{
+    font-family: "Syne";
+    font-size: 3.5vw;
+    width: 70%;
+    text-align: center;
+}
+
+.container2 .servicesList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 4vw;
+    flex-wrap: wrap;
+    margin-top: 4vh;
+}
+
+.container2 .servicesList .serviceDetails{
+    display: flex;
+    width: 20vw;
+    height: 17vh;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.5vw;
+    transition: 0.3s;
+}
+
+.servicesList .serviceDetails:hover{
+    border: 2px solid red;
+}
+
+
+
+.servicesList .serviceDetails .serviceLogo{
+    width: 4vw;
+    height: 4vw;
+}
+
+
+.serviceDetails div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1vw;
+}
+
+.serviceDetails h5{
+    width: 60%;
+    font-size: 1vw;
+    font-family: "Syne";
+}
+
+.serviceDetails div p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serviceDetails div p img{
+    width: 2vw;
+}
+
+.container2 button{
+    margin-top: 9vh;
+    color: black;
+    font-family:"Syne";
+    font-weight:700;
+    background-color: transparent;
+    border :none;
+    font-size: 1.3vw;
+}
+
+
+.last{
+    display: flex;
+    width: 20vw;
+    height: 17vh;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.5vw;
+    transition: 0.3s;
+}
+
+
+.last:hover{
+    border: 2px solid red;
+}
+
+
+
+.container2 .servicesList .last{
+    display: flex;
+    width: 20vw;
+    height: 17vh;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.5vw;
+}
+
+
+.servicesList .last .serviceLogo{
+    width: 4vw;
+    height: 4vw;
+}
+
+
+.last div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1vw;
+}
+
+.last h5{
+    width: 60%;
+    font-size: 1vw;
+    font-family: "Syne";
+}
+
+.last div p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last div p img{
+    width: 2vw;
+}
+
+
+
+
+@media (max-width:700px) {
+    .container2 .services{
+        align-items: flex-start;
+        padding-left:7vw;
+        
+    }
+    
+    
+    .last,.container2 .servicesList .last, .servicesList .last .serviceLogo,.last div p img,.last div p,.last h5{display: none;}
+    
+    
+    .container2 .services h2{
+        text-align:left;
+        font-size: 4.5vw;
+        margin-top: 3vh;
+    }
+
+
+
+     .container2 .servicesList{
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 30px;
+        gap: 10vw;
+    
+    } 
+    
+    .container2 .servicesList .serviceDetails{
+        flex-direction: column;
+        width: 30vw;
+        height: 23vw;
+        border: 1px solid rgb(232, 232, 232);
+        box-shadow:none
+        
+    }
+    
+    .servicesList .serviceDetails .serviceLogo{
+        width: 9vw;
+        height: 9vw;
+    }
+    
+    
+    .serviceDetails div{
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    
+    .serviceDetails h5{
+        width: 60%;
+        font-size: 2.5vw;
+        font-family: "Syne";
+        margin-top: 10px;
+    }
+    
+    .serviceDetails div p{
+        align-items: center;
+        justify-content: flex-start;
+        font-family: "Montserrat";
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .serviceDetails div p img{
+        width: 3vw;
+    }
+    
+    .container2 button{
+       
+        font-size:3vw;
+    }
+    
+    
+}
+
+
+.experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6vw;
+    margin-top: 10vh;
+}
+
+
+.experiences h5{
+    color:blue;
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+}
+
+
+
+.experiences .expText{
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+
+.expText h1{
+    font-family: "Syne";
+    font-size: 4vw;
+    width: 60%;
+}
+
+.expText p{
+    font-family: "Montserrat";
+    width: 30%;
+    margin-left: 3vw;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.experiences .expOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-top: 7vh;   
+}
+
+
+.experiences .expOptions .optionsContainer{
+    display: flex;
+    width: 25vw;
+    height: 15vh;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.5vw;
+}
+
+
+.expOptions .optionsContainer h4{
+    font-size: 1.9vw;
+    margin-left: 0.7vw;
+    font-family: "Syne";
+}
+
+
+
+
+.experiences .expOptions .expl{
+    display: flex;
+    width: 25vw;
+    height: 15vh;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.5vw;
+}
+
+
+.expOptions .expl h4{
+    font-size: 1.9vw;
+    margin-left: 0.7vw;
+    font-family: "Syne";
+}
+
+
+
+@media (max-width:700px){
+
+    .experiences .expOptions .expl,
+    .expOptions .expl h4{
+        display: none;
+    }
+    
+    
+    .experiences h5{
+        color:blue;
+        font-family: "Montserrat";
+        font-size: 2.5vw;
+    }
+    
+    
+    
+    .experiences .expText{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4vh;
+    }
+    
+    
+    .expText h1{
+        font-family: "Syne";
+        font-size: 4.5vw;
+        width: 80%;
+    }
+    
+    .expText p{
+        font-family: "Montserrat";
+        width: 70%;
+        margin-left: 0;
+        text-align: left;
+        margin-top: 4vh;
+    }
+    
+    
+    .experiences .expOptions{
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2vw;
+        flex-wrap: nowrap;
+    }
+
+
+
+    
+    
+    .experiences .expOptions .optionsContainer{
+        display: flex;
+        width: 35vw;
+        height: 10vh;
+        border: 1px solid rgb(230, 230, 230);
+        box-shadow:none;
+    }
+    
+    
+    .expOptions .optionsContainer h4{
+        margin-left: 1vw;
+        width: 50%;
+        margin-top: 7%;
+    }
+    
+}
+
+
+
+
+
+
+.highlights{
+   padding-left: 5vw; 
+   margin-top: 7vh;
+}
+
+
+.highlights h5{
+    color: #0039CD;
+    font-family: "Montserrat" ;
+    font-size: 1.5vw;
+}
+
+
+
+.highlights .highlightsContainer{
+    display: flex;
+    margin-top: 2vh;
+}
+
+.highlightsLeft{
+    width: 55%;
+}
+
+.highlightsContainer .highlightsLeft h2{
+    font-size: 3.5vw;
+    font-family: "Syne";
+}
+
+
+.highlightsLeft p{
+    font-size: 1.2vw;
+    font-family: "Montserrat";
+    margin-top: 2vh;
+}
+
+
+
+.highlightsContainer .communications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+
+.communications .commContainer{
+    width: 55%;
+    height: 25vh;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1.4vw;
+}
+
+.commContainer img{
+    display: none;
+}
+
+
+
+.commContainer h4{
+    font-size: 1.5vw;
+    font-family: "Syne";
+    font-weight: 700;
+}
+
+
+.commContainer p {
+    font-family: "Montserrat";
+    font-size: 1vw;
+}
+
+
+
+
+@media only screen and (max-width:700px){
+    
+    .highlights{margin-top: 17vh;}
+     
+     .highlights h5{
+         color: #0039CD;
+         font-family: "Montserrat" ;
+         font-size: 2.5vw;
+     }
+     
+     
+     
+     .highlights .highlightsContainer{
+         display: flex;
+         flex-direction: column;
+         margin-top: 2vh;
+     }
+     
+     .highlightsContainer .highlightsLeft h2{
+         font-size: 5vw;
+     }
+     
+     
+     .highlightsLeft p{
+         font-size: 2vw;
+         width: 80%;
+     }
+     
+     
+     
+     .highlightsContainer .communications {
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: row;
+         flex-wrap: wrap;
+         gap: 4vh;
+         margin-top: 7vh;
+     }
+     
+     
+     .communications .commContainer{
+        display: grid;
+        grid-template-columns: 20% 80%;
+         width: 40vw;
+         height: 25vh;
+         border: 1px solid grey;
+         padding: 1.4vw;
+     }
+     
+     .commContainer img{
+         display: block;
+         width: 110%;
+     }
+     
+     
+     
+     .commContainer h4{
+         font-size: 2.5vw;
+         font-family: "Syne";
+         font-weight: 700;
+         padding-left: 2vw;
+         padding-top: 2vh;
+     }
+     
+     
+     .commContainer p {
+         
+         font-size: 60%;
+         padding-left: 2vw;
+         padding-top: 1vh;
+     }
+}
+
+.getInTouch{
+    width: 100%;
+    height: 250px;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getInTouch span{
+    width: 95%;
+    height: 85%;
+    border-radius: 10px;
+    background-color: #E5EAF7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(assets/getintouch.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.getInTouch span h3{
+    font-size: 2.9vw;
+    font-family: "Syne";
+    font-weight: 700;
+    width: 70%;
+    text-align: center;
+}
+
+
+.getInTouch span button {
+    margin-top: 5vh;
+    width: 14vw;
+    height: 3vw;
+    border-radius: 5px;
+    background-color: #0039CD;
+    font-family: "Syne";
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+}
+
+
+.getInTouch span button:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+
+@media (max-width:700px){
+    
+    .getInTouch span{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        background-color: #E5EAF7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(assets/getintouch.svg);
+        background-position: -30% ;
+        background-size: 120%;
+    }
+    
+    
+    .getInTouch span h3{
+        font-size: 4.9vw;
+        width: 90%;
+    }
+    
+    
+    .getInTouch span button {
+        width: 25vw;
+        height: 5vw;
+        font-size: 1.9vw;
+    }
+    
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: #FFE76B;
+    margin-top: 6vh;
+    padding: 5vw;
+    background-image: url(assets/footer.svg);
+    background-position: -30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.footerLeft h1{
+    font-family: "Syne";
+    font-size: 3.5vw;
+}
+
+.footerLeft p {
+    width: 100%;
+    font-size: 1.2vw;
+    font-family: "Montserrat";
+    margin-top: 2vh;
+}
+
+.footerLeft .socials{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+
+.footerLeft .socials button{
+    width: 15vw;
+    height: 3vw;
+    background-color: black;
+    border: 1px solid white;
+    border-radius : 5px;
+    color:white;
+    font-family:"Syne";
+    font-weight:700;
+    transition : 0.3s;
+    font-size: 1.5vw;
+}
+
+.footerLeft .socials button:hover{
+    background-color: blue;
+    border-radius: 2px solid white;
+}
+
+
+.footerRight{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 15vw;
+    gap: 5vw;
+}
+
+.footerRight p{
+    font: 2.7vw;
+    font-family: "Syne";
+    font-weight: 700;
+}
+
+
+.footerRight a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-family: "Montserrat";
+    font-weight: 100;
+
+}
+.footerRight .quickLinks{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.footerRight .moreInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socials img{
+    width: 2.5vw;
+}
+
+.copyrights1{
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+
+.copyrights2{
+    display: none;
+}
+
+@media (max-width:700px){
+    footer {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 500px;
+        margin-top:0;
+        padding: 0;
+        padding-left: 7vw;
+        padding-top: 10vh;
+
+        background-image: url(assets/footer2.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .footerLeft {
+        width: 95%;
+    }
+
+
+    .footerLeft h1{
+        font-family: "Syne";
+        font-size: 5.5vw;
+    }
+    
+    .footerLeft p {
+        width: 100%;
+        font-size: 2.7vw;
+    }
+    
+    .footerLeft .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        margin-top: 5vh;
+        margin-left: 3vw;
+    }
+
+
+    .socials img{
+        width: 4.6vw;
+    }
+    
+    
+    .footerLeft .socials button{
+        margin-left: 4vw;
+        width: 30vw;
+        height: 7vw;
+        border: 1px solid #FFE76B;
+        border-radius : 5px;
+        color:#FFE76B;
+        font-size: 2.7vw;
+    }
+    
+    
+    .footerRight{
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 10vw;
+        gap: 15vw;
+        margin-top: 7vh;
+    }
+    
+    
+    .footerRight a{
+        
+        
+        font-size: 2.4vw;
+    
+    }
+    .footerRight .quickLinks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .footerRight .moreInfo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .copyrights1{
+        display: none;
+    }
+
+    .copyrights2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3vh;
+        font-size: 2.3vw;
+        font-size: "Syne";
+        font-weight: 700;
+    }
 }
