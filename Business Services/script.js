@@ -1,3 +1,5 @@
+// for drop down menu 
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const dropdownMenu = document.querySelector('.dropdown-menu');

@@ -12,11 +12,22 @@ html body{
     height: 100%;
     
 }
+
+
+
 .container1{
     width: 100%;
     height: 100vh;
     background: radial-gradient(circle at top left, #FFDC25 ,#eff0cf, #FFF7CE);   
 }
+
+
+
+
+/*header section  */
+
+
+
 .container1 header{
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -37,6 +48,8 @@ html body{
     font-weight: 700;
 }
 
+/* header menu section */
+
 .container1 header ul{
     display: flex;
     align-items: center;
@@ -49,6 +62,8 @@ html body{
     font-weight: 100;
 }
 
+
+/* login button */
 
 .container1 header button {
     width: 10vw;
@@ -68,13 +83,15 @@ html body{
     color: white;
 }
 
-
+/* meu icon for phone view */
 .menu-icon {
     display: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
+
+/* drop down menu for phone  */
 
 .dropdown-menu {
     display: none;
@@ -106,6 +123,9 @@ html body{
 }
 
 
+
+/* header styles for phone view */
+
 @media (max-width: 700px) {
 
     .container1{
@@ -130,12 +150,19 @@ html body{
 }
 
 
+
+
+/* banner css */
+
 .container1 .banner {
     display: flex;
     align-items: center;
     width: 100%;
     height: 90%;
 }
+
+/* banner text/content section  */
+
 
 .container1 .banner .bannerLeft{
     display: flex;
@@ -156,13 +183,34 @@ html body{
 }
 
 
-
+/* animation of heading  */
 
 .bannerLeft h1 span{
     
     padding-left: 1vw;
     background-color: #FFDE30;
     border-radius: 5px;
+    animation: slideBackground 5s infinite;
+}
+
+
+/* Keyframe animation for sliding background */
+@keyframes slideBackground {
+    0%, 100% {
+        background-size: 0% 100%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+}
+
+
+
+.bannerLeft h1 span{
+    background: linear-gradient(to right, #FFDE30 100%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background 0.5s ease-in-out;
 }
 
 
@@ -182,12 +230,13 @@ html body{
     align-items: center;
     justify-content: center;
     margin-left: 3vw;
-    width: 60%;
+    width: 70%;
     height: 9vh;
     background-color: white;
     border: 1px solid black;
     border-radius: 3px;
     padding: 0.3vw;
+    margin-top: 5vh;
 }
 
 
@@ -216,6 +265,7 @@ html body{
 .bannerLeft div button:hover{
     background-color: white;
     color: blue;
+    border: 1px solid blue;
 }
 
 
@@ -228,9 +278,11 @@ html body{
 
 
 .banner .bannerRight img{
-    width: 80%;
+    width: 90%;
 }
 
+
+/* style for banner for phone view */
 @media (max-width: 700px){
     .container1 .banner{
         align-items: center;
@@ -281,20 +333,20 @@ html body{
 
 
 
+
+
+/* services and experience sections  */
+
 .container2{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-top: 30px;
-    background-image: url('assets/Ellipse\ 103.png');
-    background-size: 50%;
-    background-position: right;
-    animation: backgroundFade 4s infinite;
-    position: relative;
-    background-repeat: no-repeat;
 }
 
+
+/* services section */
 
 
 .container2 .services{
@@ -320,24 +372,16 @@ html body{
 }
 
 
-/* Initial style for the span */
+
 .services h2 span {
     position: relative;
     display: inline-block;
     animation: slideBackground 5s infinite;
 }
 
-/* Keyframe animation for sliding background */
-@keyframes slideBackground {
-    0%, 100% {
-        background-size: 0% 100%;
-    }
-    50% {
-        background-size: 100% 100%;
-    }
-}
 
-/* Applying the background animation */
+
+
 .services h2 span {
     background: linear-gradient(to right, #FFDE30 100%, transparent 50%);
     background-repeat: no-repeat;
@@ -345,6 +389,8 @@ html body{
     transition: background 0.5s ease-in-out;
 }
 
+
+/* cards for servies provided */
 
 .container2 .servicesList{
     display: flex;
@@ -412,6 +458,8 @@ html body{
 }
 
 
+
+/* for moblie viee remove the last 2 cards */
 .last{
     display: flex;
     width: 20vw;
@@ -470,6 +518,8 @@ html body{
 }
 
 
+
+/* style for moblie view */
 
 
 @media (max-width:700px) {
@@ -556,12 +606,16 @@ html body{
 }
 
 
+/* experience section css */
+
+
 .experiences{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 6vw;
     margin-top: 10vh;
+    z-index: 2;
 }
 
 
@@ -585,6 +639,23 @@ html body{
     font-size: 4vw;
     width: 60%;
 }
+
+.expText h1 span {
+    position: relative;
+    display: inline-block;
+    animation: slideBackground 5s infinite;
+}
+
+
+
+
+.expText h1 span {
+    background: linear-gradient(to right, #FFDE30 100%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background 0.5s ease-in-out;
+}
+
 
 .expText p{
     font-family: "Montserrat";
@@ -618,7 +689,7 @@ html body{
 
 
 .expOptions .optionsContainer h4{
-    font-size: 1.9vw;
+    font-size: 1.5vw;
     margin-left: 0.7vw;
     font-family: "Syne";
 }
@@ -638,11 +709,13 @@ html body{
 
 
 .expOptions .expl h4{
-    font-size: 1.9vw;
+    font-size: 1.5vw;
     margin-left: 0.7vw;
     font-family: "Syne";
 }
 
+
+/* experience section style fror moblie view */
 
 
 @media (max-width:700px){
@@ -713,21 +786,35 @@ html body{
 
 
 
+/* highlights container css */
 
 
-
-.highlights{
-    height: 800px;
-   padding-left: 5vw; 
-   margin-top: 7vh;
-   background-color: #FFFDF0;
-   background-image: url(assets/Ellipse\ 142.png);
-   background-position: right;
-   background-size: 20%;
-   background-repeat: no-repeat;   
-   padding-top: 10vh;
+.highlights {
+    position: relative;
+    height: 500px;
+    padding-left: 5vw;
+    margin-top: 7vh;
+    background-color: #FFFDF0;
+    background-image: url(assets/Ellipse\ 142.png);
+    background-position: right;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    padding-top: 10vh;
 }
 
+.highlights::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-image: url(assets/Ellipse\ 141.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    pointer-events: none; /* Ensure it doesn't interfere with any interactions */
+}
 
 .highlights h5{
     color: #0039CD;
@@ -738,13 +825,11 @@ html body{
 
 
 .highlights .highlightsContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-top: 2vh;
 }
 
-.highlightsLeft{
-    width: 55%;
-}
 
 .highlightsContainer .highlightsLeft h2{
     font-size: 3.5vw;
@@ -769,42 +854,68 @@ html body{
     
 }
 
+/* cards for highlights section */
 
-
-.communications .commContainer{
-    width: 55%;
-    height: 25vh;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 1.4vw;
-    transition: 0.3s;
-}
-
-.commContainer:hover{
-    border:2px solid red
-}
-
-
-.commContainer img{
-    display: none;
-}
-
-
-
-.commContainer h4{
-    font-size: 1.5vw;
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+    padding: 1vw;
+  }
+  
+  .glass p{
     font-family: "Syne";
     font-weight: 700;
-}
+    font-size: 0.9vw;
+    text-align: center;
+    margin-top: -5vh;
+    margin-bottom: 2vh;
+  }
 
 
-.commContainer p {
-    font-family: "Montserrat";
-    font-size: 1vw;
-}
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+  }
+  
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #020202;
+  }
+  .container .glass img {
+    width: 35%;
 
+  }
+  
 
-
+/* style for highlights section in mobile view */
 
 @media only screen and (max-width:700px){
     
@@ -830,8 +941,9 @@ html body{
      
      
      .highlightsLeft p{
-         font-size: 2vw;
+         font-size: 2.5vw;
          width: 80%;
+         
      }
      
      
@@ -845,39 +957,12 @@ html body{
          margin-top: 7vh;
      }
      
-     
-     .communications .commContainer{
-        display: grid;
-        grid-template-columns: 20% 80%;
-         width: 40vw;
-         height: 25vh;
-         border: 1px solid grey;
-         padding: 1.4vw;
-     }
-     
-     .commContainer img{
-         display: block;
-         width: 110%;
-     }
-     
-     
-     
-     .commContainer h4{
-         font-size: 2.5vw;
-         font-family: "Syne";
-         font-weight: 700;
-         padding-left: 2vw;
-         padding-top: 2vh;
-     }
-     
-     
-     .commContainer p {
-         
-         font-size: 60%;
-         padding-left: 2vw;
-         padding-top: 1vh;
-     }
 }
+
+
+
+/* get in touch section  */
+
 
 .getInTouch{
     width: 100%;
@@ -968,7 +1053,7 @@ html body{
 
 
 
-
+/* footer section */
 
 footer {
     display: flex;
@@ -980,7 +1065,7 @@ footer {
     margin-top: 6vh;
     padding: 5vw;
     background-image: url(assets/footer.svg);
-    background-position: -30vh;
+    background-position:  bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1038,8 +1123,8 @@ footer {
     gap: 5vw;
 }
 
-.footerRight p{
-    font: 6.7vw;
+.quickLinks,.moreInfo p{
+    font-size: 1.4vw;
     font-family: "Syne";
     font-weight: 700;
 }
@@ -1048,7 +1133,7 @@ footer {
 .footerRight a{
     text-decoration: none;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: "Montserrat";
     font-weight: 100;
     margin-top: 2vh;
@@ -1092,7 +1177,6 @@ footer {
         padding: 0;
         padding-left: 7vw;
         padding-top: 10vh;
-
         background-image: url(assets/footer2.svg);
         background-position: center;
         background-size: cover;
@@ -1185,3 +1269,66 @@ footer {
         font-weight: 700;
     }
 }
+
+
+/* animation for container1 */
+
+
+.absolute{
+    position: absolute;
+    margin: 100px auto;
+    inset: 0;
+    top: 417px;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    z-index: 0;
+}
+.justify-center{
+    justify-content: right;
+
+}
+.bg-shape1{
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 5s infinite;
+}
+.bg-shape2{
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: two 5s infinite;    
+}
+@keyframes one{
+    0%{left: 0px; top: 0px;}
+    25%{left: -100px; top: 70px;}
+    50%{left: 20px; top: 150px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+}
+@keyframes two{
+    0%{left: 0px; top: 0px;}
+    25%{left: 50px; top: 10px;}
+    50%{left: 100px; top: 50px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+}
+
+.opacity-50{
+    opacity: 37%;
+}
+.bg-blur{
+    filter: blur(90px);
+}
+.bg-primary{
+    background-color: rgb(30, 0, 255);
+}
+.bg-purple{
+    background-color: rgb(140, 0, 215);
+}
+
+
+
