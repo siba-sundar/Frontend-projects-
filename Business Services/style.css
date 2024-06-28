@@ -89,6 +89,8 @@ html body{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin-right: 5vw;
+    
 }
 
 /* drop down menu for phone  */
@@ -132,6 +134,12 @@ html body{
         height: 700px;
         background: radial-gradient(circle at top left, #FFDC25 ,#eff0cf, #FFF7CE);   
     }
+    
+
+    .container1 header{
+        grid-template-columns: 20% 80%;
+    }
+    
 
 
     .container1 a{
@@ -298,12 +306,16 @@ html body{
     }
 
     .banner .bannerLeft h1 {
-        font-size: 6vw ;
+        font-size: 7vw ;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     .banner .bannerLeft p{
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-align: center;
+        font-weight: 400;
     }
 
     .bannerLeft div{
@@ -326,6 +338,7 @@ html body{
     
     
     .banner .bannerRight img{
+        margin-top: -5vh;
         width: 70%;
     }
 }
