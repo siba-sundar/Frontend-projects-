@@ -452,11 +452,10 @@ header .headerBottom {
 
 
 
+
+
+
 /* features section */
-
-
-
-
 
 .features {
     width: 85%;
@@ -611,7 +610,20 @@ header .headerBottom {
 
 .partners{
     margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+.partners p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+
+
 .logoSlider {
     width: 100%;
     overflow: hidden;
@@ -619,14 +631,19 @@ header .headerBottom {
 }
 
 .logoContainer {
+    margin-top: 20px;
     display: flex;
     width: 200%; /* Adjust based on number of logos and size */
     animation: scrollLogos 20s linear infinite;
 }
 
-.logo {
-    width: 12.5%; /* Adjust based on number of logos */
-    padding: 10px;
+.logoContainer a{
+    padding: 1vw;
+}
+
+.logoContainer a img{
+    width: 10vw;
+    height: 50px; /* Adjust based on number of logos */
 }
 
 @keyframes scrollLogos {
@@ -636,4 +653,62 @@ header .headerBottom {
     100% {
         transform: translateX(-50%);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Explore Section */
+
+.explore{
+    padding-left: 6vw;
+}
+
+.explore h1{
+    margin-top: 100px;
+    font-size: 2.5vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+.explore p{
+    margin-top: 10px;
+    font-size: 1.3vw;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.explore .exploreContainer{
+    display: flex;
+    gap: 2vw;
+    margin-top: 30px;
+    width: 90vw;
+    flex-wrap: wrap;
+}
+
+.exploreContainer .exploreOptions{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 27vw;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+.exploreOptions .cardContent{
+    display: flex;
+}
+
+.exploreOptions .cardContent img{
+    width: 6vw;
 }
