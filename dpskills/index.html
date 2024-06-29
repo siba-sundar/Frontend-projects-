@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- nav Bar -->
+
+    <header>
+        <!-- top part of the nav bar -->
+        <div class="headerTop">
+            <!-- webiste logo -->
+            <a href="#"><img src="assets/logo.svg" alt="" class="logo"></a>
+    
+            <!-- search Bar -->
+            <div class="searchContainer">
+                <img src="assets/searchicon.svg" alt="" class="searchIcon">
+                <input type="text" placeholder="Search by product title">
+            </div>
+    
+            <!-- login and register button -->
+            <button>Login/Register</button>
+            <!-- Search and menu icons for responsive view -->
+            <img src="assets/searchicon2.svg" alt="" class="searchIcon2">
+            <img src="assets/menuicon.svg" alt="" class="menuIcon">
+        </div>
+    
+        <!-- bottom section of the nav bar -->
+        <div class="headerBottom">
+            <div class="navBar">
+                <!-- Dropdown menu for courses -->
+                <div class="dropDown">
+                    <button class="dropBtn">Course <img src="assets/cheveron-down.svg" alt=""></button>
+                    <div class="dropDownContent">
+                        <div class="dropDownContainer">
+                            <div class="left">
+                                <a href="#" id="data-science" onclick="showVideos('dataScience', this)" class="selected"><img src="assets/menuicon1.svg" class="dropIcon" alt="icon"> <p>Data Science & Analytics</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                                <a href="#" id="software-development" onclick="showVideos('softwareDevelopment', this)"><img src="assets/menuicon2.svg" class="dropIcon" alt="icon"><p> Software Development Courses</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                                <a href="#" id="banking-finance" onclick="showVideos('bankingFinance', this)"><img src="assets/menuicon3.svg"class="dropIcon" alt="icon"> <p>Banking & Finance</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                                <a href="#" id="programming" onclick="showVideos('programmingCourses', this)"><img src="assets/menuicon4.svg" class="dropIcon" alt="icon"><p> Programming Courses</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                                <a href="#" id="business-tech" onclick="showVideos('businessTech', this)"><img src="assets/menuicon5.svg" class="dropIcon" alt="icon"> <p>Business Technology</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                            </div>
+    
+                            <div class="rightSection">
+                                <div class="vidOptions">
+                                    <button onclick="toggleVideos('free')">Free</button>
+                                    <button onclick="toggleVideos('paid')">Paid</button>
+                                </div>
+                                <div class="right" id="videoSection">
+                                    <!-- Videos will be dynamically loaded here -->
+                                </div>
+                                <a href="#" class="orangeUnderline">View all Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Other navigation links -->
+                <a href="#online-degree">Online Degree</a>
+                <a href="#pw-skills-lab">PW Skills Lab</a>
+                <a href="#job-portal">Job Portal</a>
+                <a href="#experience-portal">Experience Portal</a>
+                <a href="#become-affiliate">Become an Affiliate</a>
+                <a href="#hall-of-fame">Hall Of Fame</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- banner  -->
+
+
+    <div class="banner">
+        <h1>Accelerate Your Career Growth & <span> Upskill Yourself</span></h1>
+        <p>World-Class Certification & Degree Programs</p>
+
+        <div class="headingContainer">
+            <h2 class="heading">Heading 1</h2>
+            <h2 class="heading">Heading 2</h2>
+            <h2 class="heading">Heading 3</h2>
+            <h2 class="heading">Heading 4</h2>
+        </div>
+    
+
+
+
+        <button>Explore Courses</button>
+    </div>
+
+
+
+    <!-- overlaping container -->
+
+    <div class="features">
+
+        <div class="featuresTop">
+            <div class="featuresLogo">
+                <p>Process Advisor</p>
+                <img src="https://intellipaat.com/wp-content/themes/intellipaat/images/ey-rating.svg" width="126" height="60" alt="intellipaat-ey-image" class="img-fluid">
+
+            </div>
+
+
+            <div class="featuresAnimation">
+
+
+                <div class="headingSlide">
+                    <h2>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae repellendus a</h2>
+                </div>
+                <div class="headingSlide">
+                    <h2>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae repellendus a</h2>
+                </div>
+                <div class="headingSlide">
+                    <h2>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae repellendus a</h2>
+                </div>
+                <div class="headingSlide">
+                    <h2>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae repellendus a</h2>
+                </div>
+
+
+            </div>
+
+            
+            <div class="featuresButton">
+                <div>
+                    <img src="assets/arrow-left.svg" alt="">
+                    <img src="assets/arrow-right.svg" alt="">
+                </div>
+                <p>*Subject to terms and conditons</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="featuresBottom">
+            <div class="featuresOptions">
+                <img src="assets/featuresicon1.png" alt="">
+                <p>World Class Instructor</p>
+            </div>
+            <div class="featuresOptions">
+                <img src="assets/featuresicon2.png" alt="">
+                <p>1:1 Industry Mentors</p>
+            </div>
+            <div class="featuresOptions">
+                <img src="assets/featuresicon3.png" alt="">
+                <p>400+ Global Hiring Partners</p>
+            </div>
+            <div class="featuresOptions">
+                <img src="assets/featuresicon4.png" alt="">
+                <p>55% Avg. Salary Hike</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="partners">
+
+        <p>Programs in Collaboration with world's top Universities & MNC's</p>
+        <div class="logoSlider">
+            <div class="logoContainer">
+                <img src="logo1.png" alt="Logo 1" class="logo">
+                <img src="logo2.png" alt="Logo 2" class="logo">
+                <img src="logo3.png" alt="Logo 3" class="logo">
+                <img src="logo4.png" alt="Logo 4" class="logo">
+                <img src="logo5.png" alt="Logo 5" class="logo">
+                <img src="logo6.png" alt="Logo 6" class="logo">
+                <img src="logo7.png" alt="Logo 7" class="logo">
+                <img src="logo8.png" alt="Logo 8" class="logo">
+                <!-- Duplicate logos for infinite scroll effect -->
+                <img src="logo1.png" alt="Logo 1" class="logo">
+                <img src="logo2.png" alt="Logo 2" class="logo">
+                <img src="logo3.png" alt="Logo 3" class="logo">
+                <img src="logo4.png" alt="Logo 4" class="logo">
+                <img src="logo5.png" alt="Logo 5" class="logo">
+                <img src="logo6.png" alt="Logo 6" class="logo">
+                <img src="logo7.png" alt="Logo 7" class="logo">
+                <img src="logo8.png" alt="Logo 8" class="logo">
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+<script src="nav-scripts.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>

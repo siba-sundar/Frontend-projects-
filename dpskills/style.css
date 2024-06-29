@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth; }
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header section */
+header {
+    width: 100%;
+    height: auto; /* Adjust height dynamically */
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+/* Top section of the header */
+header .headerTop {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.headerTop .logo {
+    padding-left: 6vw;
+}
+
+/* Search bar */
+.headerTop .searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 45px;
+    margin-left: 2vw;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.searchContainer .searchIcon {
+    width: 2vw;
+}
+
+.searchIcon2 {
+    display: none; /* Initially hidden */
+}
+
+.searchContainer input {
+    width: 90%;
+    height: 100%;
+    padding-left: 2vw;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.3vw;
+    border: none;
+    background-color: transparent;
+}
+
+.headerTop button {
+    margin-left: 1vw;
+    background-color: #D2614B;
+    width: 13vw;
+    height: 45px;
+    margin-right: 6vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.menuIcon {
+    display: none; /* Initially hidden */
+}
+
+/* Media Query for screens with max-width 950px */
+@media (max-width: 950px) {
+    .headerTop .searchContainer {
+        display: none; /* Hide search container */
+    }
+
+    .headerTop button {
+        display: none; /* Hide login/register button */
+    }
+
+    .searchIcon2 {
+        display: block; /* Show search icon */
+        margin-left: auto; /* Push to the right */
+        width: 3.5vw;
+    }
+
+    .menuIcon {
+        display: block; /* Show menu icon */
+        width: 6vw;
+        padding-left: 2vw;
+    }
+
+    /* Show headerBottom in a flex column manner when menu icon is clicked */
+    .headerBottom {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .headerBottom.active {
+        display: flex; /* Show headerBottom when active class is added */
+    }
+
+    .navBar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; /* Adjust navigation links to stack vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .dropDownContent {
+        width: 100%; /* Adjust dropdown content width */
+        left: 0; /* Ensure dropdown content aligns with navbar */
+    }
+
+    .dropDownContainer .left {
+        width: 100%; /* Ensure left container takes full width */
+        max-height: initial; /* Remove max height for full display */
+        overflow-y: initial; /* Remove overflow-y for full display */
+    }
+
+    .rightSection {
+        width: 100%; /* Adjust right section width */
+        padding: 20px; /* Increase padding for better spacing */
+    }
+
+    .rightSection .vidOptions {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add gap between buttons */
+    }
+
+    .rightSection .vidOptions button {
+        width: 100%; /* Make buttons full width */
+        text-align: center; /* Center text */
+    }
+
+    .rightSection a {
+        width: 100%; /* Make view all courses link full width */
+        text-align: center; /* Center text */
+        margin-top: 20px; /* Add top margin */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bottom section of nav bar */
+header .headerBottom {
+    width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 950px){
+    header .headerBottom{
+        height: auto;
+    }
+}
+
+.navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.3vw;
+    gap: 4vw;
+}
+
+.navBar a {
+    float: left;
+    display: block;
+    color: #030303;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropBtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    left: 6vw;
+    width: 87vw;
+    height: 400px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.dropDownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropDown:hover .dropDownContent {
+    display: block;
+}
+
+.dropDownContainer {
+    display: flex;
+}
+
+.dropDownContainer .left, .dropDownContainer .right {
+    padding: 10px;
+}
+
+.dropDownContainer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 30%;
+    margin-bottom: 3vh;
+    overflow-y: auto; /* Make the left side scrollable */
+    max-height: 380px; 
+}
+
+.left a {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    border-radius: 5px;
+}
+
+.left a .dropIcon {
+    width: 3vw;
+}
+
+.rightSection {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+
+.rightSection .vidOptions {
+    display: flex;
+    gap: 3vw;
+}
+
+.vidOptions button {
+    border: none;
+    font: 1.4vw;
+    font-weight: 700;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.rightSection a {
+    width: 15vw;
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.dropDownContainer .right {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 70%;
+    overflow: hidden;
+    gap: 3vw;
+}
+
+.videoContainer {
+    width: 25vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.videoContainer img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.selected {
+    border-bottom: 2px solid orange;
+    background-color: rgb(247, 247, 247);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner section */
+
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://intellipaat.com/course-image/2021/10/Home-Hero-Bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left:6vw;
+    padding-top: 50px;
+}
+
+
+.banner h1{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.6vw;
+    font-weight: 400;
+    width: 55vw;
+}
+
+.banner h1 span{
+    color: rgb(219, 112, 40);
+}
+
+
+.banner p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+    padding-top:10px ;
+    width: 50vw;
+    font-weight: 400;
+    border-top: 1px solid  rgb(219, 112, 40);
+
+}
+
+
+
+
+.headingContainer {
+    margin-top: 50px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7vw;
+
+}
+
+.heading {
+    display: none;
+}
+
+.headingActive {
+    display: block;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(30%);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+}
+
+
+
+.banner button{
+    width: 15vw;
+    height: 50px;
+    margin-top: 40px;
+    background-color: #FF7204;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    word-spacing: 2px;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+/* features section */
+
+
+
+
+
+.features {
+    width: 85%;
+    height: 30%;
+    position: absolute;
+    bottom: -45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it overlaps */
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.featuresTop {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: grid;
+    grid-template-columns: 16% 69% 15%;
+    align-items: center;
+    background: linear-gradient(to right, #fcfcfc, #feb47b);
+}
+
+.featuresLogo {
+    padding-left: 1.5vw;
+}
+
+.featuresLogo p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.featuresLogo img {
+    margin-top: 5px;
+}
+
+.featuresAnimation {
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    position: relative; /* Ensure relative positioning */
+    width: 100%;
+    height: 100%;
+}
+
+.headingSlide {
+    flex: 0 0 100%; /* Fixed width for each slide */
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    animation: fadeInOut 12s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headingSlide h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+
+.headingSlide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.headingSlide:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.headingSlide:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.headingSlide:nth-child(4) {
+    animation-delay: 9s;
+}
+
+@keyframes fadeInOut {
+    0%, 20% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    25%, 45% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    50%, 100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.featuresButton {
+    padding-left: 3vw;
+    padding-right: 0.5vw;
+}
+
+.featuresButton img {
+    width: 3.5vw;
+}
+
+.featuresButton p {
+    font-size: 0.7vw;
+    margin-top: 10px;
+    color: rgb(65, 65, 65);
+}
+
+
+
+
+
+/* botom section of the overlaping container */
+
+.featuresBottom{
+    display: flex;
+    align-items: center;
+
+    height: 40%;
+    border: none;
+}
+
+.featuresBottom .featuresOptions{
+    width: 25%;
+    height: 40%;
+    display: flex;
+    padding-left: 1vw;
+    align-items: center;
+    background-color: #ffffff;
+    border-right: 1px solid grey;
+}
+
+
+.featuresOptions img{
+    width: 4vw;
+}
+
+.featuresBottom p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size:1.1vw;
+    padding-left: 4px;
+}
+
+
+
+/* partners Section */
+
+
+.partners{
+    margin-top: 200px;
+}
+.logoSlider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logoContainer {
+    display: flex;
+    width: 200%; /* Adjust based on number of logos and size */
+    animation: scrollLogos 20s linear infinite;
+}
+
+.logo {
+    width: 12.5%; /* Adjust based on number of logos */
+    padding: 10px;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
