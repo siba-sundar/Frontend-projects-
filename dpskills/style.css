@@ -698,17 +698,284 @@ header .headerBottom {
 .exploreContainer .exploreOptions{
     display: flex;
     flex-direction: column;
-    padding: 1vw;
     width: 27vw;
-    border: 1px solid grey;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
     border-radius: 5px;
 }
 
 
 .exploreOptions .cardContent{
-    display: flex;
+    display: grid;
+    grid-template-columns: 75% 20%;
+    height: 130px;
+    border-radius: 5px;
+    padding: 1vw;
+    font-family: "Open Sans", sans-serif; 
+    background-color: rgb(248, 248, 255); 
+    transition: 0.3s; 
 }
 
 .exploreOptions .cardContent img{
-    width: 6vw;
+    width: 5.5vw;
+}
+
+
+.cardContent .cardDetails{
+    width: 90%;
+    text-wrap: wrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContent .cardDetails h3{
+    font-size: 1.3vw;
+}
+
+
+.cardContent .cardDetails span{
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: grey;
+}
+
+
+
+.cardButtons{
+    display: flex;
+    padding: 1vw;
+    align-items: center;
+
+
+}
+
+
+.cardButtons a{
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(160, 160, 160);
+}
+
+.cardButtons img{
+    background-color: #ffb277;
+    border-radius: 50%;
+    margin-left: 63%;
+    transition: 0.3s;
+}
+
+
+
+.exploreOptions:hover .cardContent{
+    background: linear-gradient(to right, #eaedff, #f3b5ff);
+}
+
+.exploreOptions:hover .cardButtons img{
+    background-color: rgb(255, 136, 0);
+}
+
+.exploreOptions:hover .cardButtons a{
+    color: #030303;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* course section*/
+
+.course{
+    padding-left: 6vw;
+    margin-top: 150px;
+}
+
+.courseContainer{
+    margin-top: 30px;
+    height: 700px;
+}
+
+.course h1{
+    margin-top: 100px;
+    font-size: 2.5vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.courseHead {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.courseName{
+    color: #FF7204;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+.courseHead .viewall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    margin-left: 50vw;
+}
+
+
+
+
+.cardContainer {
+    width: 90%;
+    margin-left: 1vw;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardScroll {
+    display: flex;
+    gap: 2vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    border:none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+.courseimg{
+    width: 32vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.couresDetails{
+    padding: 1vw;
+    font-family: "Open Sans", sans-serif;
+ 
+}
+
+.cheading{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cheading h2{
+    font-size: 1.5vw;
+}
+
+
+.cheading img{
+    padding: 7px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 50%;
+}
+
+.couresDetails span{
+    font-size: 1.1vw;
+    color: grey;
+    font-weight: 500;
+}
+
+
+.courseDates{
+    display: flex;
+    margin-top: 60px;
+}
+
+.courseDates p{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.courseDates span{
+    font-size: 1vw;
+    margin-left: 30%;
+    color: blue;
+
+}
+
+
+.courseButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 20px;
+}
+
+
+.courseButtons .exploreButton{
+    width: 12vw;
+    height: 50px;
+    padding: 3px;
+    font-size: 1.5vw;
+    font-weight:600;
+    border-radius: 5px;
+    border: 1px solid #FF7204;
+    color: #FF7204;
+    background-color: white;
+}
+
+.courseButtons .buy{
+    width: 12vw;
+    height: 50px;
+    padding: 3px;
+    font-size: 1.5vw;
+    font-weight:600;
+    background-color: #FF7204;
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+
+
+
+.scrollButtons {
+    text-align: center;
+    margin-top: 20px;
+    height: 70px;
+}
+
+.scrollButtons button {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    border: none;
+    padding: 10px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.scrollButtons button:hover {
+    background-color: #ebebeb;
 }

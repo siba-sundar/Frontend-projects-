@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with Dropdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
@@ -39,13 +41,33 @@
                     <div class="dropDownContent">
                         <div class="dropDownContainer">
                             <div class="left">
-                                <a href="#" id="data-science" onclick="showVideos('dataScience', this)" class="selected"><img src="assets/menuicon1.svg" class="dropIcon" alt="icon"> <p>Data Science & Analytics</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
-                                <a href="#" id="software-development" onclick="showVideos('softwareDevelopment', this)"><img src="assets/menuicon2.svg" class="dropIcon" alt="icon"><p> Software Development Courses</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
-                                <a href="#" id="banking-finance" onclick="showVideos('bankingFinance', this)"><img src="assets/menuicon3.svg"class="dropIcon" alt="icon"> <p>Banking & Finance</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
-                                <a href="#" id="programming" onclick="showVideos('programmingCourses', this)"><img src="assets/menuicon4.svg" class="dropIcon" alt="icon"><p> Programming Courses</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
-                                <a href="#" id="business-tech" onclick="showVideos('businessTech', this)"><img src="assets/menuicon5.svg" class="dropIcon" alt="icon"> <p>Business Technology</p> <img src="assets/cheveron-right.svg" alt="" class="arrowRight"></a>
+                                <a href="#" id="data-science" onclick="showVideos('dataScience', this)" class="selected">
+                                    <img src="assets/menuicon1.svg" class="dropIcon" alt="icon"> 
+                                    <p>Data Science & Analytics</p> 
+                                    <img src="assets/cheveron-right.svg" alt="" class="arrowRight">
+                                </a>
+                                <a href="#" id="software-development" onclick="showVideos('softwareDevelopment', this)">
+                                    <img src="assets/menuicon2.svg" class="dropIcon" alt="icon">
+                                    <p>Software Development Courses</p> 
+                                    <img src="assets/cheveron-right.svg" alt="" class="arrowRight">
+                                </a>
+                                <a href="#" id="banking-finance" onclick="showVideos('bankingFinance', this)">
+                                    <img src="assets/menuicon3.svg" class="dropIcon" alt="icon"> 
+                                    <p>Banking & Finance</p> 
+                                    <img src="assets/cheveron-right.svg" alt="" class="arrowRight">
+                                </a>
+                                <a href="#" id="programming" onclick="showVideos('programmingCourses', this)">
+                                    <img src="assets/menuicon4.svg" class="dropIcon" alt="icon">
+                                    <p>Programming Courses</p> 
+                                    <img src="assets/cheveron-right.svg" alt="" class="arrowRight">
+                                </a>
+                                <a href="#" id="business-tech" onclick="showVideos('businessTech', this)">
+                                    <img src="assets/menuicon5.svg" class="dropIcon" alt="icon"> 
+                                    <p>Business Technology</p> 
+                                    <img src="assets/cheveron-right.svg" alt="" class="arrowRight">
+                                </a>
                             </div>
-    
+        
                             <div class="rightSection">
                                 <div class="vidOptions">
                                     <button onclick="toggleVideos('free')">Free</button>
@@ -59,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-    
+        
                 <!-- Other navigation links -->
                 <a href="#online-degree">Online Degree</a>
                 <a href="#pw-skills-lab">PW Skills Lab</a>
@@ -69,6 +91,7 @@
                 <a href="#hall-of-fame">Hall Of Fame</a>
             </div>
         </div>
+        
     </header>
 
 
@@ -238,29 +261,30 @@
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>Data Science & Analytics</h3>
+                        <span>Shape your career in the world of Data Science, Data Analytics, and Artificial Intelligence with our carefully curated courses.</span>
                     </div>
                     <img src="assets/menuicon1.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
-
+                    <a href="#">Know More</a>
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
 
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>Software Development Courses</h3>
+                        <span>Embark on the upskilling journey of designing & creating cutting edge applications. Learn the critical aspects of Sofrware Development Lifecycle to elevate your career and earn high salary at top companies.</span>
                     </div>
                     <img src="assets/menuicon2.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
                     <a href="#">Know More</a>
-                    <img src="" alt="">
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
 
@@ -268,14 +292,15 @@
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>Banking & Finance</h3>
+                        <span>Discover courses for banking and finance skills. Learn money management, financial literacy, accounting from experts. Explore to improve finance skills or start a career in banking.</span>
                     </div>
                     <img src="assets/menuicon3.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
-
+                    <a href="#">Know More</a>
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
 
@@ -283,14 +308,15 @@
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>Programming Courses</h3>
+                        <span>Master the intricacies of programming, fortified with essential DSA principles to tackle real-world challenges with confidence. Elevate your skill set with dynamic curriculum, designed to equip you with the latest tools and techniques.</span>
                     </div>
                     <img src="assets/menuicon4.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
-
+                    <a href="#">Know More</a>
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
 
@@ -298,14 +324,15 @@
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>Business Technology</h3>
+                        <span>Excel in Product and Digital Marketing Learn to craft product roadmaps, drive digital marketing campaigns, and lead successful projects. Gain the skills to excel, setting the stage for career growth. Enhance your professional portfolio with our certification and prepare to handle the complex projects and team leadership, ensuring a successful career.</span>
                     </div>
                     <img src="assets/menuicon5.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
-
+                    <a href="#">Know More</a>
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
 
@@ -313,14 +340,15 @@
             <div class="exploreOptions">
                 <div class="cardContent">
                     <div class="cardDetails">
-                        <h3>This is the heading</h3>
-                        <span>This is the text</span>
+                        <h3>PW School of Healthcare</h3>
+                        <span>Kickstart your Healthcare career with our specialized Undergrad Programs with University Degrees, industry-focused training. Learn from top doctors & professors in tech-enabled classrooms & cutting-edge labs. Guaranteed internships & Job Assistance at top hospitals nationwide.</span>
                     </div>
                     <img src="assets/menuicon6.svg" alt="">
                 </div>
 
                 <div class="cardButtons">
-
+                    <a href="#">Know More</a>
+                    <img src="assets/pointed-arrow.svg" alt="">
                 </div>
             </div>
         </div>
@@ -328,6 +356,1221 @@
 
 
 
+
+
+
+
+
+
+
+
+
+    <!-- courses -->
+
+
+    <div class="course">
+        <h1>Our Course</h1>
+        
+
+        <div class="courseContainer">
+            <div class="courseHead">
+                <p class="courseName">Data Science & Analytics</p>
+            <button class="viewall">View all <img src="assets/pointed-arrow(black).svg" alt=""></button>
+            </div>
+            
+
+
+            <div class="cardContainer">
+                <div class="cardScroll">
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="scrollButtons">
+                    <button class="scrollLeftBtn" onclick="scrollCardsLeft()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAN5JREFUWEft1sENgzAMBdBvdRG8Ra+M0hFgkY5UDkViC7IIahXUSBxAVpy4RZW5WoKXH8eBcLKHTuaBg6Qd8YQ8ISkBqf7fPTTfr01MgLspSEkc1asltGJelxlAAC2tFlUFtMGkhQ/cj60mpWLQDiaA6Mbdc/g6qDYmLkCdkAVGDbLCqECWmGyQNUYLegBYB2DpzNk7hdlN/UnJDJUNiquyRKlAlig1yApVBLJAFYMOUL+7XNPR3TQ6uB9Zc7FmzyHpIxGl/Q9K766yZRI0p+4gKS1PyBOSEpDq3kNSQm+gRHslFVvT9AAAAABJRU5ErkJggg=="/></button>
+                    <button class="scrollRightBtn" onclick="scrollCardsRight()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAOJJREFUWEft1c0NwjAMBWBHMEi7BRInRmGELgIjwYEDWzSLIJDLjypQecR+kSrkXK2mX14SJ8nMRpqZRwKEdiQSioRQAqj+X2eo368aXXHbnTNa+a91c0ID5rroRSRLumxYKDtot1bMkBATZQfdEzqwUWaQxvLYNirKBaqBcoPYKAqIiaKBWKgaIG0Hz5ElpW3bnY7VG+P7D0aN0ozRDykJsTAUEBPjBrExLlANjA/08biW3aapW2c+1KN3TEqv9rcWYAa9GqEsm5I+g/qRC4Qmt9QDhFKLhCIhlACqxxlCCd0AW959JftIupQAAAAASUVORK5CYII="/></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- course 2 seaction -->
+
+
+        <div class="courseContainer">
+            <div class="courseHead">
+                <p class="courseName">Data Science & Analytics</p>
+            <button class="viewall">View all <img src="assets/pointed-arrow(black).svg" alt=""></button>
+            </div>
+            
+
+
+            <div class="cardContainer">
+                <div class="cardScroll">
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="scrollButtons">
+                    <button class="scrollLeftBtn" onclick="scrollCardsLeft()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAN5JREFUWEft1sENgzAMBdBvdRG8Ra+M0hFgkY5UDkViC7IIahXUSBxAVpy4RZW5WoKXH8eBcLKHTuaBg6Qd8YQ8ISkBqf7fPTTfr01MgLspSEkc1asltGJelxlAAC2tFlUFtMGkhQ/cj60mpWLQDiaA6Mbdc/g6qDYmLkCdkAVGDbLCqECWmGyQNUYLegBYB2DpzNk7hdlN/UnJDJUNiquyRKlAlig1yApVBLJAFYMOUL+7XNPR3TQ6uB9Zc7FmzyHpIxGl/Q9K766yZRI0p+4gKS1PyBOSEpDq3kNSQm+gRHslFVvT9AAAAABJRU5ErkJggg=="/></button>
+                    <button class="scrollRightBtn" onclick="scrollCardsRight()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAOJJREFUWEft1c0NwjAMBWBHMEi7BRInRmGELgIjwYEDWzSLIJDLjypQecR+kSrkXK2mX14SJ8nMRpqZRwKEdiQSioRQAqj+X2eo368aXXHbnTNa+a91c0ID5rroRSRLumxYKDtot1bMkBATZQfdEzqwUWaQxvLYNirKBaqBcoPYKAqIiaKBWKgaIG0Hz5ElpW3bnY7VG+P7D0aN0ozRDykJsTAUEBPjBrExLlANjA/08biW3aapW2c+1KN3TEqv9rcWYAa9GqEsm5I+g/qRC4Qmt9QDhFKLhCIhlACqxxlCCd0AW959JftIupQAAAAASUVORK5CYII="/></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- course 3 section -->
+
+
+        <div class="courseContainer">
+            <div class="courseHead">
+                <p class="courseName">Data Science & Analytics</p>
+            <button class="viewall">View all <img src="assets/pointed-arrow(black).svg" alt=""></button>
+            </div>
+            
+
+
+            <div class="cardContainer">
+                <div class="cardScroll">
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img.png" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                <span class="date">Starts on 9 June 2024</span>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="scrollButtons">
+                    <button class="scrollLeftBtn" onclick="scrollCardsLeft()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAN5JREFUWEft1sENgzAMBdBvdRG8Ra+M0hFgkY5UDkViC7IIahXUSBxAVpy4RZW5WoKXH8eBcLKHTuaBg6Qd8YQ8ISkBqf7fPTTfr01MgLspSEkc1asltGJelxlAAC2tFlUFtMGkhQ/cj60mpWLQDiaA6Mbdc/g6qDYmLkCdkAVGDbLCqECWmGyQNUYLegBYB2DpzNk7hdlN/UnJDJUNiquyRKlAlig1yApVBLJAFYMOUL+7XNPR3TQ6uB9Zc7FmzyHpIxGl/Q9K766yZRI0p+4gKS1PyBOSEpDq3kNSQm+gRHslFVvT9AAAAABJRU5ErkJggg=="/></button>
+                    <button class="scrollRightBtn" onclick="scrollCardsRight()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAOJJREFUWEft1c0NwjAMBWBHMEi7BRInRmGELgIjwYEDWzSLIJDLjypQecR+kSrkXK2mX14SJ8nMRpqZRwKEdiQSioRQAqj+X2eo368aXXHbnTNa+a91c0ID5rroRSRLumxYKDtot1bMkBATZQfdEzqwUWaQxvLYNirKBaqBcoPYKAqIiaKBWKgaIG0Hz5ElpW3bnY7VG+P7D0aN0ozRDykJsTAUEBPjBrExLlANjA/08biW3aapW2c+1KN3TEqv9rcWYAa9GqEsm5I+g/qRC4Qmt9QDhFKLhCIhlACqxxlCCd0AW959JftIupQAAAAASUVORK5CYII="/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- parallax effect -->
+
+    <!-- <section>
+        <div id="parallax1" class="parallax-item">
+            <div class="left-half">
+                <h1>Dedicated Placement Assistance</h1>
+                <p>Empower your career journey and enhance your abilities with job-focused courses</p>
+                <div class="companyLogo">
+                    <img src="assets/amazon-logo.svg" alt="">
+                    <img src="assets/google-logo.svg" alt="">
+                    <img src="assets/walmart-logo.svg" alt="">
+                    <img src="assets/microsoft-logo.svg" alt="">
+                    <img src="assets/linkedin-logo.svg" alt="">
+                </div>
+
+                <span>& more..</span>
+
+                <button>Explore <img src="assets/pointed-arrow(black).svg" alt=""></button>
+
+                <a href="#">Skip <img src="assets/pointed-arrow.svg" alt=""></a>
+            </div>
+            <div class="right-half"></div>
+            <div class="center-circle">
+
+            </div>
+        </div>
+        <div id="parallax2" class="parallax-item">
+            <h2>Div 2</h2>
+        </div>
+        <div id="parallax3" class="parallax-item">
+            <h2>Div 3</h2>
+        </div>
+        <div id="parallax4" class="parallax-item">
+            <h2>Div 4</h2>
+        </div>
+    </section> -->
+
+
+
+
+
+
+    <!-- more courses -->
+
+
+    <div class="course">
+        <h1>Your Launchpad To Learning</h1>
+        
+
+        <div class="courseContainer">
+            <div class="courseHead">
+                <p class="font-sans mx-0">Essential Skills, Zero Cost</p>
+
+                
+            <button class="viewall">View all <img src="assets/pointed-arrow(black).svg" alt=""></button>
+            </div>
+
+
+            <div class="flex space-x-6 my-10">
+                <p class="border border-gray-500 p-[10px_1vw] rounded-lg bg-white hover:bg-gray-300 transition duration-300">Banking and finance</p>
+                <p class="border border-gray-500 p-[10px_1vw] rounded-lg bg-white hover:bg-gray-300 transition duration-300">Software development</p>
+                <p class="border border-gray-500 p-[10px_1vw] rounded-lg bg-white hover:bg-gray-300 transition duration-300">Software & Tech Workshop</p>
+
+            </div>
+
+            
+
+
+            <div class="cardContainer">
+                <div class="cardScroll">
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img2.jpeg" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    <div class="card">
+                        <img src="assets/course-img2.jpeg"   alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img2.jpeg" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img2.jpeg" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <img src="assets/course-img2.jpeg" alt="" class="courseimg">
+
+                        <div class="couresDetails">
+                            <div class="cheading">
+                                <h2>Data Science With Generative Ai</h2>
+                                <img src="assets/send.svg" alt="">
+                            </div>
+                            
+
+
+                            <span>Job Assistancce | Gain Data Analytics Expreties</span>
+
+
+                            <div class="courseDates">
+                                <p>Registration Started</p>
+                            </div>
+                        </div>
+
+
+                        <div class="courseButtons">
+                            <button class="exploreButton">Explore</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="scrollButtons">
+                    <button class="scrollLeftBtn" onclick="scrollCardsLeft()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAN5JREFUWEft1sENgzAMBdBvdRG8Ra+M0hFgkY5UDkViC7IIahXUSBxAVpy4RZW5WoKXH8eBcLKHTuaBg6Qd8YQ8ISkBqf7fPTTfr01MgLspSEkc1asltGJelxlAAC2tFlUFtMGkhQ/cj60mpWLQDiaA6Mbdc/g6qDYmLkCdkAVGDbLCqECWmGyQNUYLegBYB2DpzNk7hdlN/UnJDJUNiquyRKlAlig1yApVBLJAFYMOUL+7XNPR3TQ6uB9Zc7FmzyHpIxGl/Q9K766yZRI0p+4gKS1PyBOSEpDq3kNSQm+gRHslFVvT9AAAAABJRU5ErkJggg=="/></button>
+                    <button class="scrollRightBtn" onclick="scrollCardsRight()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAOJJREFUWEft1c0NwjAMBWBHMEi7BRInRmGELgIjwYEDWzSLIJDLjypQecR+kSrkXK2mX14SJ8nMRpqZRwKEdiQSioRQAqj+X2eo368aXXHbnTNa+a91c0ID5rroRSRLumxYKDtot1bMkBATZQfdEzqwUWaQxvLYNirKBaqBcoPYKAqIiaKBWKgaIG0Hz5ElpW3bnY7VG+P7D0aN0ozRDykJsTAUEBPjBrExLlANjA/08biW3aapW2c+1KN3TEqv9rcWYAa9GqEsm5I+g/qRC4Qmt9QDhFKLhCIhlACqxxlCCd0AW959JftIupQAAAAASUVORK5CYII="/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Explore ecosystem -->
+
+    <div class="mx-20 my-36">
+        <h1 class="text-4xl font-semibold">Explore Our Ecosystem</h1>
+        <p class="text-lg/2 font-normal my-2">A one-stop destination for all your learning to placement needs</p>
+
+
+        <div class="flex w-full my-12">
+
+            <!-- content -->
+            <div class="flex gap-4  w-1/2 h-screen*3">
+
+
+
+
+
+                <!-- left contnet -->
+
+
+                <div class="w-1/2 h-full flex flex-col gap-4 justify-center ">
+                    <div class=" expCont flex gap-2 flex-col w-full h-72 bg-white p-4 relative transition duration-300 hover:bg-yellow-50 shadow-xl ">
+                        <img src="assets/products-icon1.png" alt="" class="w-12">
+                        <h3 class="text-xl font-semibold my-2 ">PW Skills Lab</h3>
+                        <p class="text-gray-700 text-lg/1 my-1font-light">Buying a new PC is no longer required, Access unlimited computing power!</p>
+                        <button class=" expButton flex align-middle hidden justify-center w-1/2 px-1 my-5 gap-1 text-white bg-black p-2 rounded">
+                            Explore <img src="assets/pointed-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+                    <!-- card 2 -->
+
+                    <div class=" expCont flex gap-2 flex-col w-full h-72 bg-white p-4 relative transition duration-300 hover:bg-pink-100 shadow-xl ">
+                        <img src="assets/products-icon1.png" alt="" class="w-12">
+                        <h3 class="text-xl font-semibold my-2 ">PW Skills Lab</h3>
+                        <p class="text-gray-700 text-lg/1 my-1font-light">Buying a new PC is no longer required, Access unlimited computing power!</p>
+                        <button class=" expButton flex align-middle hidden justify-center w-1/2 px-1 my-5 gap-1 text-white bg-black p-2 rounded">
+                            Explore <img src="assets/pointed-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+                    <!-- card3 -->
+
+                    <div class=" expCont flex gap-2 flex-col w-full h-72 bg-white p-4 relative transition duration-300 hover:bg-green-50  shadow-xl ">
+
+                        <img src="assets/products-icon1.png" alt="" class="w-12">
+                        <h3 class="text-xl font-semibold my-2 ">PW Skills Lab</h3>
+                        <p class="text-gray-700 text-lg/1 my-1font-light">Buying a new PC is no longer required, Access unlimited computing power!</p>
+
+                        
+                        <button class=" expButton flex align-middle hidden justify-center w-1/2 px-1 my-5 gap-1 text-white bg-black p-2 rounded">
+                            Explore <img src="assets/pointed-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+                <!-- right content -->
+
+
+
+                <div class="w-1/2 h-full flex flex-col gap-4 justify-center">
+
+                    <div class=" expCont flex gap-2 flex-col w-full h-72 bg-white p-4 relative transition duration-300 hover:bg-pink-50 shadow-xl">
+                        <img src="assets/products-icon1.png" alt="" class="w-12">
+                        <h3 class="text-xl font-semibold my-2 ">PW Skills Lab</h3>
+                        <p class="text-gray-700 text-lg/1 my-1font-light">Buying a new PC is no longer required, Access unlimited computing power!</p>
+                        <button class=" expButton flex align-middle hidden justify-center w-1/2 px-1 my-5 gap-1 text-white bg-black p-2 rounded">
+                            Explore <img src="assets/pointed-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+
+
+                    <div class=" expCont flex gap-2 flex-col w-full h-72 bg-white p-4 relative transition duration-300 hover:bg-blue-50 shadow-xl">
+                        <img src="assets/products-icon1.png" alt="" class="w-12">
+                        <h3 class="text-xl font-semibold my-2 ">PW Skills Lab</h3>
+                        <p class="text-gray-700 text-lg/1 my-1font-light">Buying a new PC is no longer required, Access unlimited computing power!</p>
+                        <button class=" expButton flex align-middle hidden justify-center w-1/2 px-1 my-5 gap-1 text-white bg-black p-2 rounded">
+                            Explore <img src="assets/pointed-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- animation -->
+            <div class="flex items-center justify-center w-1/2 h-screen*3 ">
+                <div class="flex items-center justify-center w-full  h-full">
+                    <script class="w-full h-full" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player class="w-full h-full" src="https://lottie.host/ef3ea3a0-59fe-4993-b86d-05312ec3e1dd/TQzNneQ6aj.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Success -->
+
+
+    <div class="success mx-20">
+        <h1 class="text-4xl mt-8 mb-4 font-bold">Success Stories</h1>
+    
+        <div class="sucCourseContainer my-10 overflow-hidden">
+               
+            <div class="sucCardContainer ">
+                <div class="sucCardScroll flex gap-8 ">
+    
+                    <!-- Card 1 -->
+                    <div class="sucCard flex flex-col w-72 h-80 rounded-lg shadow-md">
+                        <div class="flex justify-center align-middle bg-green-100 text-green-800 rounded-tl-lg rounded-tr-lg"><p class=" text-lg font-semibold">First Job</p></div>
+    
+                        <div class="flex w-full h-14 mx-4 my-2">
+                            <img src="assets/profile1.jpeg" alt="" class="w-12 h-12 rounded-full">
+                            <span class="mx-4">
+                                <p class="text-base font-semibold">Pushpendra Sen</p>
+                                <p class="text-sm font-medium text-gray-400">unit Sales Manager</p>
+                            </span>
+                        </div>
+
+                        <div class="mx-5 my-4">
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem ab qui, at reiciendis repellat reprehenderit laudantium ea rem quia eni</p>
+                        </div>
+
+
+                        <div class="flex w-10 h-12 mx-2 ">
+                            <div>
+                                <p class="text-sm font-semibold" >From</p>
+                                <p class="text-base text-orange-600 font-semibold">Freshers</p>
+                            </div>
+
+                            <img src="assets/dash-arrow.svg" alt="" class="mx-9">
+
+                            <div>
+                                <p>To</p>
+                                <div class="flex w-20 h-10 align-middle justify-center">
+                                    <img src="assets/sucesscomp1.jpeg" alt="" class="w-14">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- card 2 -->
+                    <div class="sucCard flex flex-col w-72 h-80 rounded-lg shadow-md">
+                        <div class="flex justify-center align-middle bg-green-100 text-green-800 rounded-tl-lg rounded-tr-lg"><p class=" text-lg font-semibold">First Job</p></div>
+    
+                        <div class="flex w-full h-14 mx-4 my-2">
+                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/success-stories/cb533e07-ab3c-48a5-b7be-da738a18629a.jpeg" alt="" class="w-12 h-12 rounded-full">
+                            <span class="mx-4">
+                                <p class="text-base font-semibold">Pushpendra Sen</p>
+                                <p class="text-sm font-medium text-gray-400">unit Sales Manager</p>
+                            </span>
+                        </div>
+
+                        <div class="mx-5 my-4">
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem ab qui, at reiciendis repellat reprehenderit laudantium ea rem quia eni</p>
+                        </div>
+
+
+                        <div class="flex w-10 h-12 mx-2 ">
+                            <div>
+                                <p class="text-sm font-semibold" >From</p>
+                                <p class="text-base text-orange-600 font-semibold">Freshers</p>
+                            </div>
+
+                            <img src="assets/dash-arrow.svg" alt="" class="mx-9">
+
+                            <div>
+                                <p>To</p>
+                                <div class="flex w-20 h-10 align-middle justify-center">
+                                    <img src="assets/sucesscomp1.jpeg" alt="" class="w-14">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- card 3 -->
+
+                    <div class="sucCard flex flex-col w-72 h-80 rounded-lg shadow-md">
+                        <div class="flex justify-center align-middle bg-green-100 text-green-800 rounded-tl-lg rounded-tr-lg"><p class=" text-lg font-semibold">First Job</p></div>
+    
+                        <div class="flex w-full h-14 mx-4 my-2">
+                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/success-stories/6391ecaf-5fc5-4c34-9fb5-b6aaaf795271.jpeg" alt="" class="w-12 h-12 rounded-full">
+                            <span class="mx-4">
+                                <p class="text-base font-semibold">Pushpendra Sen</p>
+                                <p class="text-sm font-medium text-gray-400">unit Sales Manager</p>
+                            </span>
+                        </div>
+
+                        <div class="mx-5 my-4">
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem ab qui, at reiciendis repellat reprehenderit laudantium ea rem quia eni</p>
+                        </div>
+
+
+                        <div class="flex w-10 h-12 mx-2 ">
+                            <div>
+                                <p class="text-sm font-semibold" >From</p>
+                                <p class="text-base text-orange-600 font-semibold">Freshers</p>
+                            </div>
+
+                            <img src="assets/dash-arrow.svg" alt="" class="mx-9">
+
+                            <div>
+                                <p>To</p>
+                                <div class="flex w-20 h-10 align-middle justify-center">
+                                    <img src="assets/sucesscomp1.jpeg" alt="" class="w-14">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- card 4 -->
+                    <div class="sucCard flex flex-col w-72 h-80 rounded-lg shadow-md">
+                        <div class="flex justify-center align-middle bg-green-100 text-green-800 rounded-tl-lg rounded-tr-lg"><p class=" text-lg font-semibold">First Job</p></div>
+    
+                        <div class="flex w-full h-14 mx-4 my-2">
+                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/success-stories/6391ecaf-5fc5-4c34-9fb5-b6aaaf795271.jpeg" alt="" class="w-12 h-12 rounded-full">
+                            <span class="mx-4">
+                                <p class="text-base font-semibold">Pushpendra Sen</p>
+                                <p class="text-sm font-medium text-gray-400">unit Sales Manager</p>
+                            </span>
+                        </div>
+
+                        <div class="mx-5 my-4">
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque voluptatem ab qui, at reiciendis repellat reprehenderit laudantium ea rem quia eni</p>
+                        </div>
+
+
+                        <div class="flex w-10 h-12 mx-2 ">
+                            <div>
+                                <p class="text-sm font-semibold" >From</p>
+                                <p class="text-base text-orange-600 font-semibold">Freshers</p>
+                            </div>
+
+                            <img src="assets/dash-arrow.svg" alt="" class="mx-9">
+
+                            <div>
+                                <p>To</p>
+                                <div class="flex w-20 h-10 align-middle justify-center">
+                                    <img src="assets/sucesscomp1.jpeg" alt="" class="w-14">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- card 5 -->
+
+
+
+                    
+                    
+    
+                    <!-- Repeat for other cards -->
+    
+                </div>
+    
+                <div class="sucScrollButtons flex justify-center mt-8">
+                    <button class="sucScrollLeftBtn bg-white shadow-md rounded-full p-2 mr-4 focus:outline-none" onclick="scrollSucCardsLeft()">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAN5JREFUWEft1sENgzAMBdBvdRG8Ra+M0hFgkY5UDkViC7IIahXUSBxAVpy4RZW5WoKXH8eBcLKHTuaBg6Qd8YQ8ISkBqf7fPTTfr01MgLspSEkc1asltGJelxlAAC2tFlUFtMGkhQ/cj60mpWLQDiaA6Mbdc/g6qDYmLkCdkAVGDbLCqECWmGyQNUYLegBYB2DpzNk7hdlN/UnJDJUNiquyRKlAlig1yApVBLJAFYMOUL+7XNPR3TQ6uB9Zc7FmzyHpIxGl/Q9K766yZRI0p+4gKS1PyBOSEpDq3kNSQm+gRHslFVvT9AAAAABJRU5ErkJggg=="/>
+                    </button>
+                    <button class="sucScrollRightBtn bg-white shadow-md rounded-full p-2 focus:outline-none" onclick="scrollSucCardsRight()">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAOJJREFUWEft1c0NwjAMBWBHMEi7BRInRmGELgIjwYEDWzSLIJDLjypQecR+kSrkXK2mX14SJ8nMRpqZRwKEdiQSioRQAqj+X2eo368aXXHbnTNa+a91c0ID5rroRSRLumxYKDtot1bMkBATZQfdEzqwUWaQxvLYNirKBaqBcoPYKAqIiaKBWKgaIG0Hz5ElpW3bnY7VG+P7D0aN0ozRDykJsTAUEBPjBrExLlANjA/08biW3aapW2c+1KN3TEqv9rcWYAa9GqEsm5I+g/qRC4Qmt9QDhFKLhCIhlACqxxlCCd0AW959JftIupQAAAAASUVORK5CYII="/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- FAQ -->
+
+
+
+    <div class="mx-20 my-20">
+        <h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+    
+        <div class="flex w-full h-96 my-7">
+    
+            <!-- Questions section -->
+            <div id="questions" class="w-7/12 h-full overflow-y-auto">
+                <div class="question grid grid-cols-[90%_10%] gap-4 border-b border-gray-300 align-middle py-5 cursor-pointer" 
+                data-answer="PW Skills operates a strict no-refunds policy for all purchased paid courses. Once a course purchase is confirmed, payment cannot be refunded. This policy applies to all courses, irrespective of the price, duration or the learner's progress within the course.">
+                    <p class="w-full text-xl">What is the refund policy?</p>
+                    <img src="assets/pointed-arrow(black).svg" alt="" class="border-2 rounded-full border-black">
+                </div>
+    
+                <div class="question grid grid-cols-[90%_10%] gap-4 border-b border-gray-300 align-middle py-5 cursor-pointer" data-answer="Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process.">
+                    <p class="w-full text-xl">I need to purchase a course. Whom should I contact?</p>
+                    <img src="assets/pointed-arrow(black).svg" alt="" class="border-2 rounded-full border-black">
+                </div>
+    
+                <div class="question grid grid-cols-[90%_10%] gap-4 border-b border-gray-300 align-middle py-5 cursor-pointer" data-answer="Answer to refund policy.">
+                    <p class="w-full text-xl">What is the refund policy?</p>
+                    <img src="assets/pointed-arrow(black).svg" alt="" class="border-2 rounded-full border-black">
+                </div>
+    
+                <div class="question grid grid-cols-[90%_10%] gap-4 border-b border-gray-300 align-middle py-5 cursor-pointer" data-answer="Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process.">
+                    <p class="w-full text-xl">I need to purchase a course. Whom should I contact?</p>
+                    <img src="assets/pointed-arrow(black).svg" alt="" class="border-2 rounded-full border-black">
+                </div>
+    
+                <div class="question grid grid-cols-[90%_10%] gap-4 border-b border-gray-300 align-middle py-5 cursor-pointer" data-answer="Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process.">
+                    <p class="w-full text-xl">I need to purchase a course. Whom should I contact?</p>
+                    <img src="assets/pointed-arrow(black).svg" alt="" class="border-2 rounded-full border-black">
+                </div>
+            </div>
+    
+            <!-- Answers section -->
+            <div id="answers" class="w-5/12 h-full overflow-hidden p-4 ">
+                <div id="answer" class="hidden"></div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <!-- footer section -->
+
+
+
+    <div class="px-20 bg-gray-950 h-auto w-full">
+
+        <!-- top section of the footer -->
+
+        
+        <div class="w-full h-screen/2  pt-12">
+
+            <!-- logos -->
+            <div class="w-2/12">
+                <img src="https://intellipaat.com/course-image/2021/05/footer_logo.png" alt="">
+                
+                <!-- social media -->
+                 <div class="flex gap-1 mt-3 border-b w-36 flex align-middle justify-center pb-4">
+                    <img class="w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAgJJREFUWEftl21uwjAMhuOWg7CTDE4yOATm59ivquEQg5OMnWQ9CQFPRWodJ3FSpqFpkRBSm7pPX3/EBvNgCx6Mx/wNoKZp5lVVrQDg2Rgz739drzb9dwBw3Gw2p1wPZCnUtu0OAF4zXtI5547b7XanfUYFtN/vF865914Jre3hPjVYEqhAlSCwc+4tpVYUyFr7YYxZlEgSeeaAiOvQ/SDQRGVuAU4B762YUiJQHzOkjnrRS6qqOvHMstaujDEUf3ytEfHAL4pA1tqvnAAGgGUoxSNAHSI+JYEiBkS1UoEasyc96ymUqw4iiipT8aQvqOuakkJyGd32VBoZy1VHMkggdV1T/IkB7bmIuZsD0ZdQEGqXl8LW2iwb3G0cKLfuTAa61rkTIi5vCnCgrOy6uuUeQKM44kBO66t+368DibUj9hGamBpmaq7LfgIo6rJUUJcApeIyHNSKA7UEKBWXozgcuUxxqNIpPmxLP/kB2RdXam1pUXGMti/8HBwB5VbZe6Q9P3qksyzULkjJNDXtvRbEA8pUaRKQdDBPbdCKgUI91NQWthQo2FcHgQbDYGwOKwEa1Z1kx8g3JGpTLlB04qB3J+cy2hQZFLVANFqvNaO1CoigBi58GXSDKSD1xCr2Q5rWg8Bms9n8fD5/V2A+iZKL6bo0EmnsqxXSGLvHnn+glIoXLdhBNKQmThwAAAAASUVORK5CYII="/>
+                    <img class="w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAe9JREFUWEftV9FtwjAQ9cEiMElhkpIhMOIL+EKYIUonaZikGSSO20dtZCWO7QNaUSmWIiRytp/fPb+7kHiyQU+GRwyAUhkZGPpzhvb7/WQ8Hm+EEDMhxOT7tzTGnJumOa3X68oHhNj2f52UIWg0Gi1Wq9U2dZr2+8PhsCUigAmNiogKYwxAvgKw1nqaBHQ8HmfGmA9jzI4Dys1jHKKQUp7a8R2G/FPmgrJp+mSAcUAmUsq5P68DSCn1JoRYeEGl1rpoU+svopRCPOZxRiWlnCYZiixeaK3LELCEdoJ6CoFBYIehDC2URLSr67py4AKsRpmKSSFojIwTl97OuOZZgwUIKUNqrJf4WsraLCeIiObL5dI/zHVaTNQwMXjGwwcX0C03hgVaStlbQ4MvlFLwlF9hB6Wk7T1RH8JLe/VRAh4OKmW2vdTZ6w+zeySooBkmGUKABXQthCyR9ASn2Akao1srwyDZGGNidotFO0aGQSbB5bATZcjtYEGhf7lHS9GblaUhPwjpa5pmRkQvthNMMuIFJIXMBuRZAbfFyGYmS0O28ULRvMWT2GA6GoIhouclons0c+md+4pnKtd9pQP1jMsKqvd7qE9OgcjWkBPzhcofQeOm4UEn4J5zXyfJAZKloVsWvHfO8CmdYnBg6N8x9AVw9fMllZ9xAAAAAABJRU5ErkJggg=="/>
+                    <img class="w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAXtJREFUWEftmNFxgzAMhiWzSDpJySZdAnM8NX3iEEOknaTJJM0kKFUOODAQfAYnzh1+y9myv/ySJRmEwAYGxgMb0JxHRhXK83ynlPqYM14yj4gXrfW3uccAiIgE5LjkMFtbRNwnSXLqrh8AFUVxQMRP202XrGPmrzRND68PJP9EKXWqqipeUz0nhUyjNWPMCcgMPLmBURT9LYmdxtYJKDiFAODCzD/BxNAarpnaw8llohAAdJPX7v93XB9iZlpJqjdFZV6yMQC81+vFrjecgEyjbuLUWreJtQ72o9Z6bx5cz/0CQA/KO1CWZaLI6CjLMmZmgWqHV6DuQaLIGBwRCVDjbvAOZKgg1fytC0pEUrTbLsI7kKmAmVTNwv0IIMngbeDeuxCi3COA+F7QPkOhDQimEqO4iog2hZ6vkBRWZj43twcRm2J5u7a9Bn34OJi0db72IbYf3pisEuNYVfZFZPVQrHsXaRUGDdWaYNZP6TUPddlr+xwzp1pwCl0BPdT7NJ0dQPQAAAAASUVORK5CYII="/>
+                    <img class="w-7 h-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEftWLGO00AQnd04X4GQEiEKKCiQ6C9/AJwoEAXkExLF6xiduDsRFHmsfAOHoAIdEl9ArkaUQAWYAvETWQ83lh0Fx/ZuyEa64iy5iWdn376ZeTMbARfsERcMD1wCMkXEmqHpdNrxPK+TpumeyWnxXQiR8Ov7/tx6jckQEZ8AwEuTncX3hIheBUFw1GRbyxAz0mq1GIg1Ixag2CTRWvfCMEyq7GsBIeLHHYApMMyVUj1rQA7D1ERaXyl1UjaoZAgRfwJAxzIEjWZEdCylnBMRh3/VZ6KU6toCIhdgzgGcKKX67CuO4z0i4jRYPkqpNULWftgkXHx6LmumPi8C3rQjhDjMd12yUOVXCNErS8L/AmqslFKFcjXxW1Wta3m0BiiKoqOVE1ZFblkhiHhNCHEnTdOb52s4zF+11p/CMPxhIxvMcFmXNgZU0BzH8S0iYpG7V0J9mqbp4Xg8/pKD4gKpfFwAypI0juMuEcUAsF+z1zsppT8ajX4hIlcXq/3a4wJQFnNEfAAAb5sqkYj2gyB4X1VdxbqtAWmtuyz5iPgMAI4NgA6CIHjRFLatARX5g4gHAPC8sUkK8dT3/elOGSoARVF0XwhxagB01/f9D026tjVDhfLOZrOrWusIAB7WgHrjed54OBz+3nVS88DVZ3VFxOsAwIr8aBWUEOI1n1wp9b0pXLzGBUPsZ9kOJpPJFc/zbkspb7AwEtG3drv9eTAY/GFD0whjBciyl9m0Dm6kponB3DpMNK+Eh/sTz8pn3GAXi0UipcwE0NB6li6smqtJ7h2NJZmbQtf+ycGqDUyxdwXKah7Kk9HVTaMWe1W4snDXrdgxS5sN+QySc4mT1DZBNwhjLZhGhooNchl47OBKtN1FsXzi4irNMzO/tozwjcPpVdp2Y1d21n82uNrQ5OcSkImhvxURmDTAi+bRAAAAAElFTkSuQmCC"/>
+                 </div>
+
+
+                 <p class="text-white  mt-4 pl-2">Get our App</p>
+
+                 <img class="mt-5" src="https://intellipaat.com/wp-content/themes/intellipaat/images/playstore.svg" alt="">
+                 <img class="mt-2" src="https://intellipaat.com/wp-content/themes/intellipaat/images/appstore.svg" alt="">
+            </div>
+
+
+            <!-- other links -->
+            <div>
+                <div>
+                    <h1>ANALYTICS COURSES</h1>
+                    <p>Data Science Course</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+
+                <div></div>
+                <div></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
 
 <script src="nav-scripts.js"></script>
 <script src="animations.js"></script>
