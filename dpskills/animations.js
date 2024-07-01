@@ -79,21 +79,6 @@ function scrollCardsRight() {
 
 
 
-
-// paralax animation 
-
-const parallax = document.getElementById("parallax");
-
-// Parallax Effect for DIV 1
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * 0.7 + "px";
-  // DIV 1 background will move slower than other elements on scroll.
-});
-
-
-
-
 let sucScrollPosition = 0;
 
 function scrollSucCardsLeft() {
@@ -169,3 +154,67 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+// parallax effect code
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('#scroll-section .section');
+    const scrollSection = document.getElementById('scroll-section');
+    const fixedSectionClass = 'fixed-section';
+  
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const scrollSectionTop = scrollSection.offsetTop;
+      const scrollSectionBottom = scrollSectionTop + scrollSection.offsetHeight;
+  
+      sections.forEach((section, index) => {
+        const sectionTop = scrollSectionTop + index * windowHeight;
+        const isLastSection = index === sections.length - 1;
+  
+        if (index < sections.length - 1) {
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + windowHeight) {
+            section.classList.add(fixedSectionClass);
+            section.style.transform = `translateY(${scrollPosition - sectionTop}px)`;
+          } else {
+            section.classList.remove(fixedSectionClass);
+            section.style.transform = 'translateY(0)';
+          }
+        }
+  
+        if (isLastSection) {
+          if (scrollPosition >= sectionTop) {
+            section.classList.remove(fixedSectionClass);
+            section.style.transform = 'translateY(0)';
+          }
+        }
+      });
+  
+      if (scrollPosition >= sections[sections.length - 1].offsetTop) {
+        sections.forEach(section => {
+          section.classList.remove(fixedSectionClass);
+          section.style.transform = 'translateY(0)';
+        });
+      }
+    });
+  });
+
+  
+
+
+
+
+
+
+
+  
