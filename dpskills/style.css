@@ -315,6 +315,8 @@ header .headerBottom {
     gap: 3vw;
 }
 
+
+
 .videoContainer {
     width: 25vw;
     height: 70px;
@@ -323,12 +325,13 @@ header .headerBottom {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 15px;
     border: 1px solid rgb(222, 222, 222);
 }
 
 .videoContainer img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 90%;
     margin-right: 10px;
 }
 
@@ -340,7 +343,18 @@ header .headerBottom {
 
 
 
+@media  (max-width: 950px){
 
+    .left a {
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        align-items: center;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 1.2vw;
+        border-radius: 5px;
+    }
+}
 
 
 
